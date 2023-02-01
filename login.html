@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet">
+
+      <!-- Favicons -->
+    <link href="image/favicon.png" rel="icon">
+    <link href="image/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <link href="css/stylelayout.css" rel="stylesheet">
+
+  </head>
+<body>        
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-lg-between" style="background-color: rgb(51, 50, 50);">
+  
+        <h1 class="logo me-auto me-lg-0"><a href="index.html">My App<span>.</span></a></h1>
+  
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="index.html#aboutInfo">About</a></li>
+            <li><a class="nav-link scrollto" href="index.html#contactInfo">Contact</a></li>            
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+  
+        <div>
+          <a href="#" class="get-started-btn-selected scrollto">Sign In</a>
+
+          <a href="signup.html" class="get-started-btn scrollto">Register</a>
+        </div>
+  
+      </div>
+    </header>  
+    <main>
+    
+      <div class="container marketing">
+    
+        <div> 
+          <section class="vh-100 gradient-custom">
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-lg-8 col-xl-8">
+                  <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">                  
+                      
+                      <div class="mb-md-5 mt-md-4 pb-5">      
+                        <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                        <p class="text-white-50 mb-5">Please enter your email and password!</p>
+          
+                        <div class="row justify-content-center">
+                          <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+    
+                            <form class="mx-1 mx-md-4" id="signInForm" name="signInForm" action="#"> 
+    
+                              <div class="form-outline form-white mb-3">
+                                <label class="form-label" for="emailSignIn">Email</label>
+                                <input type="email" id="emailSignIn" class="form-control form-control-lg" />
+                                &nbsp;&nbsp;<span id="emailSignInError" style="color: rgb(218, 35, 35); font-weight: 500;"></span>
+                              </div>
+                
+                              <div class="form-outline form-white mb-3">
+                                <label class="form-label" for="passwordSignIn">Password</label>
+                                <input type="password" id="passwordSignIn" class="form-control form-control-lg" />
+                                &nbsp;&nbsp;<span id="passwordSignInError" style="color: rgb(218, 35, 35); font-weight: 500;"></span>
+                              </div>
+                
+                              <br>
+                              <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                <button type="button" class="btn btn-primary btn-lg btn-block" id="submitSignIn">Sign in</button>
+                                &nbsp;&nbsp;&nbsp;
+                                <button type="reset" class="btn btn-primary btn-lg">Reset</button>
+                              </div>
+    
+                              <a href="#!" onclick="forgotPassword()">Forgot password?</a> 
+                              <br><br>  
+                              <a href="signup.html" style="color: aqua;">New User?</a>
+                            </form>
+    
+                          </div>
+    
+                          <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">      
+                            <img src="image/Actify-Illustrations-Customer-360-02-2048x1584.png" class="img-fluid" alt="Sample image">      
+                          </div>
+    
+                        </div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+      </div><!-- /.container -->
+        
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2023 My Org, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>   
+    
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
